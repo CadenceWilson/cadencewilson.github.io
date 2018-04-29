@@ -1,0 +1,40 @@
+html,
+body {
+  display: table;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;;
+}
+
+html {
+  background: url('../images/background.jpg');
+}
+
+#logo {
+  position: fixed;
+  top: 10%;;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  max-width: 50%;
+  max-height: 25%;
+}
+
+#desk {
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  max-height: 75%;
+}
+
+@media screen and (orientation: portrait) {
+  img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  img {
+    max-height: 100%;
+  }
+}
